@@ -1,11 +1,11 @@
-const button_1 = document.getElementById("button_1");
-const button_2 = document.getElementById("button_2");
-const anime = document.getElementById("main");
+const button_1 = document.querySelector(".button_1");
+const button_2 = document.querySelector(".button_2");
+const anime = document.querySelector(".anime");
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-button_1.addEventListener('click', async ()=> {
+button_1.addEventListener("click", () => {
     anime.classList.add("clicked");
+})
+
+button_2.addEventListener("click", () => {
+    anime.classList.remove("clicked");
 })

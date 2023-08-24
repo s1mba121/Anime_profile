@@ -56,10 +56,20 @@ header {
 .button_2 {
     width: 106px;
 }
-main {
+.anime.clicked {
     position: relative;
     width: 1431px;
     height: 751px;
+
+    left: 409px;
+
+    border-radius: 15px;
+    background: #161616;
+}
+.anime {
+    position: relative;
+    width: 1431px;
+    height: 331px;
 
     left: 409px;
 
