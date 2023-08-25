@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/profile.css">
-    
-    
+    <link rel="stylesheet" href="css/anime_download.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +14,35 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="nav_nav">
+            <div class="nav_logo">
+                <img src="img/Ellipse 1636.svg" alt="">
+                <h1>Ao</h1>
+                <h2>Spa</h2>
+            </div>
+            <ul class="nav_ul">
+                <a href="">Главная</a>
+                <a href="">Календарь</a>
+                <a href="">Случайное</a>
+                <a href="">Команда</a>
+                <a href="">Помочь проекту</a>
+            </ul>
+            <div class="search">
+                <button class="search_button"><img src="img/search.png" alt=""></button>
+                <input class="nav_input" type="text" placeholder="Поиск...">
+            </div>
+            <a class="notification" href=""><img src="img/colocol.png" alt=""></a>
+            <a class="nav_profile" href="index.html"><img src="img/nav_profile.png" alt=""></a>
+        </nav>
+    </header>
     <div class="bg"></div>
     <div class="profile_nav_buttons">
         <button class="button_1">Список аниме</button>
         <button class="button_2">Торрент</button>
     </div>
-    <main class="anime">
-        <nav>
+    <main class="anime clicked">
+        <nav class="anime_nav clicked">
             <button>Пересмотрено</button>
             <button>Смотрю</button>
             <button>Запланировано</button>
@@ -28,11 +50,19 @@
             <button>Избранное</button>
             <button>Выложено</button>
         </nav>
-        <div class="line"></div>
+        <div class="line clicked"></div>
     </main>
+    <div class="anime_download">
+        <h1>Последнее загруженные</h1>
+        <button class="remove">Удалить все (4)</button>
+        <button class="downloaded"></button>
+        <button class="downloaded"></button>
+        <button class="downloaded"></button>
+        <button class="downloaded"></button>
+    </div>
     <div class="profile_block">
         <div class="logo"><img src="img/logo.png" alt=""></div>
-        <a class="settings" href=""><img src="img/settings.png" alt=""></a>
+        <a class="settings" href="profile_settings.html"><img src="img/settings.png" alt=""></a>
         <h1>Mercury</h1>
         <h2>Отсутствует описание</h2>
         <div class="admin"><h3>Администратор</h3></div>
@@ -66,7 +96,16 @@
         <h10>В общем эпизодов</h10>
         <h11>В общем часов</h11>
     </div>
-    <footer></footer>
+    <footer>
+        <h1>2023-Kurosawa</h1>
+        <a class="telegram" href=""><img src="img/telegram.png" alt=""></a>
+        <a class="discord" href=""><img src="img/discord.png" alt=""></a>
+        <a class="vk" href=""><img src="img/vk.png" alt=""></a>
+        <a class="youtube" href=""><img src="img/youtube.png" alt=""></a>
+        <a class="h" style="margin-left: 436px;" href="">Политика</a>
+        <a class="h" href="">Соглашение</a>
+        <a class="h" href="">Реклама</a>
+    </footer>
     <script src = "js/pages.js"></script>
 </body>
 </html>
