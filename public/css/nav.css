@@ -11,12 +11,15 @@ header {
 .nav_logo {
     width: 87px;
     height: 39px;
+    border-radius: 39px;
 }
 .nav_logo img {
     position: absolute;
 
     top: 22px;
     left: 80px;
+
+    border-radius: 39px;
 }
 .nav_logo h1 {
     position: absolute;

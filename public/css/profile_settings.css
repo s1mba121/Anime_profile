@@ -191,6 +191,30 @@ aside button:hover {
 .nikneim {
     margin-bottom: 36px;
 }
+.nikneim::placeholder, .information::placeholder {
+    position: relative;
+    left: 16px;
+
+    color: #C4C4C4;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.nikneim[type="text"], .information[type="text"] {
+    position: relative;
+
+    margin-left: 0;
+    
+    color: #C4C4C4;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .slider {
     position: relative;
     width: 1199px;
@@ -202,4 +226,57 @@ aside button:hover {
 
     height: 41px;
     width: 1135px;
+
+    top: 30px;
+}
+.smile {
+    position: relative;
+    display: flex;
+    width: 193px;
+    height: 33px;
+
+    gap: 7px;
+}
+.smile button {
+    width: 33px;
+    height: 33px;
+    
+    border-radius: 8px;
+    background: #282828;
+    border: none;
+
+    cursor: pointer;
+    border: 1.9px solid var(--green, #4ab86700);
+    transition: all 0.3s ease;
+}
+.smile button:hover {
+    border-color: #4AB868;
+}
+.change_buttons {
+    position: relative;
+    left: 717px;
+}
+.cancel {
+    position: relative;
+    left: 0;
+
+    color: #B2B2B2;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    width: 116px;
+    height: 41px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
 }
