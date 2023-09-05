@@ -53,11 +53,19 @@ header
     position: relative;
     left: 81px;
     margin-right: 380px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .back svg
 {
-    background: none;
+    width: 12px;
+    height: 10px;
+    transform: rotate(90deg);
 }
 
 /* -> Logo */
@@ -240,17 +248,6 @@ header
     line-height: normal;
 }
 
-.social
-{
-    width: 262px;
-    height: 55px;
-
-    display: flex;
-    gap: 26px;
-
-    margin-bottom: 26px;
-}
-
 .reg
 {
     color: #7C7C7C;
@@ -274,7 +271,30 @@ header
     font-weight: 600;
     line-height: normal;;
 }
+/* Social */
+.social
+{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 262px;
+    height: 55px;
 
+
+    margin-bottom: 26px;
+}
+
+.social a {
+    display: inline-flex;
+    width: 55px;
+    height: 40px;
+
+    border-radius: 8px;
+    background: #2D2D2D;
+    
+    justify-content: center;
+    align-items: center;
+}
 
 
 

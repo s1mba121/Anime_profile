@@ -37,19 +37,89 @@
     </header>
     <aside>
         <h1>Настройки</h1>
-        <button>Аккаунт</button>
-        <button>Профиль</button>
-        <button>Уведомление</button>
-        <button>Сессия</button>
+        <button class="btn_account clicked">Аккаунт</button>
+        <button class="btn_profile">Профиль</button>
+        <button class="btn_notification">Уведомление</button>
+        <button class="btn_session">Сессия</button>
     </aside>
-    <main class="first">
+    <main class="first clicked_1">
+        <!-- Account -->
         <div class="bg"></div>
         <div class="logo"></div>
         <button class="change_avatar">Изменить аватар</button>
         <button class="change_bg">Изменить обложку</button>
         <button class="delete">Удалить</button>
+        <!-- Notification -->
+        <div class="notification_2 active">
+            <h1 class="notification_h1">Социальные</h1>
+            <div class="checkbox_container_profile">
+                <input type="checkbox" id="cb1" name="Notification_1">
+                <label for="cb1">Когда кто-то отвечает на мой комментарий</label>
+            </div>
+            <div class="checkbox_container_profile">
+                <input type="checkbox" id="cb2" name="Notification_2">
+                <label for="cb2">Упоминание в комментариях</label>
+            </div>
+            <div class="checkbox_container_profile">
+                <input type="checkbox" id="cb3" name="Notification_3">
+                <label for="cb3">Когда кто-то повышает рейтинг моего комментария</label>
+            </div>
+            <div class="checkbox_container_profile">
+                <input type="checkbox" id="cb4" name="Notification_4">
+                <label for="cb4">Когда кто-то понижмает рейтинг моего комментария</label>
+            </div>
+            <h2 class="notification_h2">Аниме</h2>
+            <div style="top: 50px;" class="checkbox_container_profile">
+                <input type="checkbox" id="cb5" name="Notification_5">
+                <label for="cb5">Когда выходят новые аниме-серии из моего списка</label>
+            </div>
+            <div style="top: 50px;" class="checkbox_container_profile">
+                <input type="checkbox" id="cb6" name="Notification_6">
+                <label for="cb6">Когда выходят новые тайтлы на сайте</label>
+            </div>
+            <div style="top: 50px;" class="checkbox_container_profile">
+                <input type="checkbox" id="cb7" name="Notification_7">
+                <label for="cb7">Получать уведомления на почту о релизах</label>
+            </div>
+            <h4 class="notification_h3">Изменения на сайте</h4>
+            <div style="top: 75px;" class="checkbox_container_profile">
+                <input type="checkbox" id="cb8" name="Notification_8">
+                <label for="cb8">Получать уведомления по обновлению сайта</label>
+            </div>
+        </div>
+        <!-- Profile -->
+        <div class="profile">
+            <h1 style="margin-bottom: 52px; top: 35px;">Логин</h1>
+            <input style="width: 1473px; left: 33px;" class="information" type="text" placeholder="Ynchq">
+            <h2 style="margin-bottom: 46px; top: 29px;">Почта</h2>
+            <input style="width: 1473px; left: 33px;" class="information" type="text" placeholder="ynchq.gmail.com">
+            <div style="width: 256px; height: 40px; left: 1250px; top: 26px; margin-bottom: 64px;" class="change_buttons">
+                <button class="cancel">Отменить</button>
+                <button class="save">Сохранить</button>
+            </div>
+            <h3 style="margin-bottom: 29px;">Изменить пароль</h3>
+            <h4 style="margin-bottom: 19px;">Старый пароль</h4>
+            <input style="width: 1473px; left: 33px; margin-bottom: 29px;" class="information" type="password">
+            <h5 style="margin-bottom: 19px;">Новый пароль</h5>
+            <input style="width: 1473px; left: 33px; margin-bottom: 29px;" class="information" type="password">
+            <h6 style="margin-bottom: 19px;">Подтвердите пароль</h6>
+            <input style="width: 1473px; left: 33px; margin-bottom: 22px;" class="information" type="password">
+            <div style="width: 256px; height: 40px; left: 1250px;" class="change_buttons">
+                <button class="cancel">Отменить</button>
+                <button class="save">Сохранить</button>
+            </div>
+            <h1>Социальные сети</h1>
+            <div class="social_settings">
+                <div style="margin-bottom: 23px;" class="google_block"></div>
+                <a href="">Привязать</a>
+                <div style="margin-bottom: 23px;" class="discord_block"></div>
+                <a href="">Привязать</a>
+                <div class="telegram_block"></div>
+                <a href="">Отвязать</a>
+            </div>
+        </div>
     </main>
-    <main class="second">
+    <main class="second clicked">
         <h1>Никнейм</h1>
         <input class="nikneim" type="text" placeholder="Никнейм">
         <h2>Рамки</h2>
@@ -72,7 +142,7 @@
             </div>
         </div>
     </main>
-    <footer style="top: 1179px;">
+    <footer style="position: relative; top: 0px;">
         <h1>2023-Kurosawa</h1>
         <a class="telegram" href=""><img src="img/telegram.png" alt=""></a>
         <a class="discord" href=""><img src="img/discord.png" alt=""></a>
@@ -82,5 +152,6 @@
         <a class="h" href="">Соглашение</a>
         <a class="h" href="">Реклама</a>
     </footer>
+    <script src="js/profile_settings_pages.js"></script>
 </body>
 </html>
